@@ -1,21 +1,114 @@
-*{
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-head{
-    display:none
+body {
+    background: #0d1117;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
+/* Navbar */
 nav {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    padding: 20px 8%;
+    border-bottom: 1px solid #30363d;
 }
 
-nav ul{
-    padding: 100px 0px;
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
 }
 
-nav ul li{
-    display: block;
+.Bashantatag {
+    margin-right: auto;
+    color: #00ff9c;
+}
+
+nav li {
+    color: #aaa;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #00ff9c;
+}
+
+/* Main */
+.container {
+    min-height: 80vh;
+    padding: 100px 10%;
+    display: flex;
+    align-items: center;
+}
+
+.detail-container {
+    max-width: 600px;
+    border-left: 3px solid #00ff9c;
+    padding-left: 25px;
+}
+
+.detail-container h2 {
+    font-size: 60px;
+    color: white;
+}
+
+.detail-container h3 {
+    color: #58a6ff;
+    margin: 8px 0;
+}
+
+.detail-container h4{
+    color: lightblue;
+}
+
+
+
+.detail-container p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color: #8b949e;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background: #00ff9c;
+    border-radius: 50%;
+    margin-left: 50px;
+    box-shadow: 0 0 10px #00ff9c;
+}
+
+.user-online{
+    padding:0px 0px;
+    margin:0px 15px;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    
+}
+
+.view-projects{
+    color: #58a6ff;
+    display: inline-block;
+    padding: 30px 20px;
+    margin: 0px 50px;
+}
+
+.contact-me{
+    color: #58a6ff;
+    display: inline-block;
+    padding: 0px;
+    border-color: #aaa;
+}
+
+.download-cv{
+    color:#8b949e;
+    display:inline-block;
+    padding: 30px;
 }

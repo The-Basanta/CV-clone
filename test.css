@@ -6,7 +6,6 @@
 
 body {
     background: #0d1117;
-    color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -33,9 +32,6 @@ nav li {
     cursor: pointer;
 }
 
-nav li:hover {
-    color: #00ff9c;
-}
 
 /* Main */
 .container {
@@ -96,19 +92,35 @@ nav li:hover {
 .view-projects{
     color: #58a6ff;
     display: inline-block;
-    padding: 30px 20px;
-    margin: 0px 50px;
+    padding: 17px;
+    border-radius: 10px;
+    font-size:smaller;
+    margin-right: 30px;
+    margin-top:20px;
+    background-color: black;
 }
 
 .contact-me{
     color: #58a6ff;
     display: inline-block;
-    padding: 0px;
+    padding: 17px;
+    margin-right:15px;
     border-color: #aaa;
+    background-color: black;
+
+    
 }
 
 .download-cv{
     color:#8b949e;
     display:inline-block;
-    padding: 30px;
+    margin-left: 17px;
+    padding: 17px;
+}
+
+
+.bottom{
+    display: table;
+
+
 }

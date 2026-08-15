@@ -1,18 +1,36 @@
+/* =========================
+   Global Styles
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background: #0d1117;
-    font-family: Arial, sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
-/* Navbar */
+body {
+    background: #0d1117;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
 nav {
     padding: 20px 8%;
     border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    background: #0d1117;
+    z-index: 1000;
 }
 
 nav ul {
@@ -24,26 +42,43 @@ nav ul {
 
 .Bashantatag {
     margin-right: auto;
+}
+
+.Bashantatag h2 {
     color: #00ff9c;
 }
 
-nav li {
+nav a {
     color: #aaa;
-    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ff9c;
 }
 
 
-/* Main */
+/* =========================
+   Home Section
+========================= */
+
 .container {
     min-height: 80vh;
     padding: 100px 10%;
+
     display: flex;
     align-items: center;
+    gap: 50px;
+
+    flex-wrap: wrap;
 }
 
 .detail-container {
     max-width: 600px;
+
     border-left: 3px solid #00ff9c;
+
     padding-left: 25px;
 }
 
@@ -57,70 +92,353 @@ nav li {
     margin: 8px 0;
 }
 
-.detail-container h4{
+.detail-container h4 {
     color: lightblue;
 }
 
-
-
 .detail-container p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri,
+        "Trebuchet MS", sans-serif;
+
     font-size: large;
     color: #8b949e;
+
     line-height: 1.7;
     margin-top: 20px;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.view-projects {
+    color: whitesmoke;
+    background-color: black;
+    border: 1px solid #30363d;
+}
+
+.view-projects:hover {
+    border-color: #00ff9c;
+}
+
+.contact-me {
+    color: white;
+    background-color: #0d1117;
+    border: 1px solid #aaa;
+}
+
+.contact-me:hover {
+    color: #00ff9c;
+    border-color: #00ff9c;
+}
+
+.download-cv {
+    color: black;
+    background-color: #00ff9c;
+    border: 1px solid #00ff9c;
+}
+
+.download-cv:hover {
+    background-color: #00cc7a;
+}
+
+
+/* =========================
+   Online Status
+========================= */
+
+.status-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .pulse-dot {
     width: 10px;
     height: 10px;
+
     background: #00ff9c;
     border-radius: 50%;
-    margin-left: 50px;
+
     box-shadow: 0 0 10px #00ff9c;
+
+    animation: pulse 1.5s infinite;
 }
 
-.user-online{
-    padding:0px 0px;
-    margin:0px 15px;
+.user-online {
     color: aqua;
-    font-family: 'Courier New', Courier, monospace;
-    display:flex;
-    
+
+    font-family: "Courier New", Courier, monospace;
 }
 
-.view-projects{
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px #00ff9c;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #00ff9c;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #00ff9c;
+    }
+}
+
+
+/* =========================
+   Meta Information
+========================= */
+
+.meta-grid {
+    display: grid;
+    gap: 15px;
+
+    min-width: 250px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-key {
     color: #58a6ff;
-    display: inline-block;
-    padding: 17px;
-    border-radius: 10px;
-    font-size:smaller;
-    margin-right: 30px;
-    margin-top:20px;
-    background-color: black;
+    font-size: 14px;
 }
 
-.contact-me{
+.meta-val {
+    color: #8b949e;
+}
+
+
+/* =========================
+   General Sections
+========================= */
+
+section {
+    padding: 80px 10%;
+    border-top: 1px solid #21262d;
+}
+
+section h2 {
+    color: #00ff9c;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   About
+========================= */
+
+.about-title {
+    color: #00ff9c;
+    font-size: 36px;
+
+    font-family:
+        "Trebuchet MS",
+        "Lucida Sans Unicode",
+        "Lucida Grande",
+        Arial,
+        sans-serif;
+}
+
+.about-container {
+    max-width: 900px;
+
+    color: #8b949e;
+
+    padding: 20px 0;
+
+    line-height: 1.8;
+}
+
+.about-container p {
+    margin-bottom: 20px;
+}
+
+.about-container h3 {
     color: #58a6ff;
+    margin: 30px 0 15px;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.section-header-skill-page {
+    color: white;
+}
+
+.skill-grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.skill-category-glass-panel,
+.skill-category {
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid #30363d;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.skill-category-glass-panel:hover,
+.skill-category:hover {
+    border-color: #00ff9c;
+
+    transform: translateY(-5px);
+}
+
+.skill-category h3,
+.skill-category-glass-panel h3 {
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Skill Tags
+========================= */
+
+.tech-batch {
     display: inline-block;
-    padding: 17px;
-    margin-right:15px;
-    border-color: #aaa;
-    background-color: black;
 
-    
+    color: #00ff9c;
+
+    border: 1px solid #30363d;
+
+    padding: 8px 12px;
+
+    margin: 5px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    background: #161b22;
 }
 
-.download-cv{
-    color:#8b949e;
-    display:inline-block;
-    margin-left: 17px;
-    padding: 17px;
+
+/* =========================
+   Education
+========================= */
+
+.education-grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+
+    gap: 25px;
+}
+
+.education-category {
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid #30363d;
+
+    border-radius: 12px;
+}
+
+.education-category h3 {
+    color: #58a6ff;
+    margin-bottom: 15px;
 }
 
 
-.bottom{
-    display: table;
+/* =========================
+   Responsive Design
+========================= */
 
+@media (max-width: 768px) {
 
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .Bashantatag {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 70px 7%;
+    }
+
+    .detail-container h2 {
+        font-size: 45px;
+    }
+
+    .status-container {
+        margin-top: 20px;
+    }
+
+    .meta-grid {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+
+    .buttons button {
+        margin-bottom: 10px;
+    }
 }
+
+
+@media (max-width: 480px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Bashantatag {
+        margin-right: 0;
+    }
+
+    .detail-container h2 {
+        font-size: 38px;
+    }
+
+    .container {
+        padding: 50px 6%;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+}
+

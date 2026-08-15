@@ -1,54 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github</title>
+
+    <title>/dev/Bashanta</title>
+
     <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <nav>
         <ul>
-            <li class= "Bashantatag" >
+            <li class="Bashantatag">
                 <h2>/dev/Bashanta</h2>
             </li>
 
-            <li>Home</li>
-            <li>About</li>
-            <li>skills</li>
-            <li>Experience</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
         </ul>
-
     </nav>
 
-    <div class="container">
+
+    <!-- Home Section -->
+    <section class="container" id="home">
+
         <div class="detail-container">
-            <h2>Bashanta</h2> 
+
+            <h2>Bashanta</h2>
+
             <h3>Frontend Engineer</h3>
+
             <h4>Beginner Developer</h4>
-            <p>Beginner frontend developer, student at Amrit Science Campus, currently studing Bachelor in Information Technology (BIT)</p>
-           
-           <button class="view-projects">View Projects</button>
-            <button class ="contact-me">Contact me</button>
-            <button class="download-cv">Download CV</button>
-        
+
+            <p>
+                Beginner frontend developer, student at Amrit Science Campus,
+                currently studying Bachelor in Information Technology (BIT).
+            </p>
+
+            <div class="buttons">
+                <button class="view-projects">
+                    View Projects
+                </button>
+
+                <button class="contact-me">
+                    Contact Me
+                </button>
+
+                <button class="download-cv">
+                    Download CV
+                </button>
+            </div>
+
         </div>
 
-            <span class="pulse-dot"> <span class="user-online"> Bashanta is Online </span>
-            <span SYSTEM ONLINE></span>
-        <div class="system-status-tag  font-mono"></div>
 
-    <div class="bottom"   
-        <div class="Location">Loc: Kathmandu Nepal</div>
-        <div class="Level">Level: Beginner</div>
-        <div class="Language">Lang:HTML,CSS,JS</div>
-        <div class="Contact">Contact: 9864267737</div>
-    </div>    
+        <!-- Online Status -->
+        <div class="status-container">
+            <span class="pulse-dot"></span>
+            <span class="user-online">
+                Bashanta is Online
+            </span>
+        </div>
+
+
+        <!-- Meta Information -->
+        <div class="meta-grid">
+
+            <div class="meta-item">
+                <span class="meta-key">Loc:</span>
+                <span class="meta-val">
+                    Kathmandu, Nepal
+                </span>
+            </div>
+
+            <div class="meta-item">
+                <span class="meta-key">Language:</span>
+                <span class="meta-val">
+                    HTML, CSS, JS
+                </span>
+            </div>
+
+            <div class="meta-item">
+                <span class="meta-key">Contact:</span>
+                <span class="meta-val">
+                    9864267737
+                </span>
+            </div>
 
         </div>
-    </div>
-<script src="script.js"></script>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="section-header-about-page" id="about">
+
+        <h2 class="about-title">
+            ABOUT
+        </h2>
+
+        <div class="about-container">
+
+            <p>
+                I am a beginner and hardworking Front-End Developer with a
+                strong passion for creating clean, responsive, and user-friendly
+                websites.
+            </p>
+
+            <p>
+                I am currently pursuing a Bachelor's degree in Information
+                Technology at Amrit Science Campus, where I am developing my
+                knowledge of programming, web development, and information
+                technology.
+            </p>
+
+            <h3>Professional Summary</h3>
+
+            <p>
+                Motivated and enthusiastic IT student with a strong interest
+                in web development and practical knowledge of front-end
+                technologies.
+            </p>
+
+            <p>
+                Familiar with creating responsive and user-friendly websites
+                using HTML, CSS, JavaScript, and modern front-end concepts.
+            </p>
+
+            <p>
+                Eager to learn new technologies, improve problem-solving
+                skills, and gain hands-on experience through real-world
+                projects.
+            </p>
+
+            <p>
+                A quick learner with good teamwork, communication, and
+                time-management skills, seeking opportunities to grow as a
+                software and web development professional.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section class="section-header-skill-page" id="skills">
+
+        <h2>Technical Stack &amp; Competencies</h2>
+
+        <div class="skill-grid">
+
+            <!-- Frontend -->
+            <div class="skill-category-glass-panel">
+
+                <h3>Frontend Development</h3>
+
+                <span class="tech-batch">HTML</span>
+                <span class="tech-batch">CSS</span>
+                <span class="tech-batch">JavaScript</span>
+                <span class="tech-batch">React</span>
+
+            </div>
+
+
+            <!-- UI/UX -->
+            <div class="skill-category">
+
+                <h3>UI/UX Design</h3>
+
+                <span class="tech-batch">
+                    Photoshop Knowledge
+                </span>
+
+                <span class="tech-batch">
+                    User Research
+                </span>
+
+                <span class="tech-batch">
+                    Design Systems
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section class="section-header-education-page" id="education">
+
+        <h2>EDUCATION</h2>
+
+        <div class="education-grid">
+
+            <div class="education-category">
+
+                <h3>+2 Graduation</h3>
+
+                <span class="tech-batch">
+                    GPA: 2.98
+                </span>
+
+                <span class="tech-batch">
+                    School: Sungava, Parsa, Chitwan
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>

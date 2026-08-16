@@ -8,7 +8,8 @@
     box-sizing: border-box;
 }
 
-html {
+/* Enable smooth scrolling across all browsers */
+html, body {
     scroll-behavior: smooth;
 }
 
@@ -147,8 +148,8 @@ nav a:hover {
 
 .download-cv {
     color: black;
-    background-color: #00ff9c;
-    border: 1px solid #00ff9c;
+    background-color: white;
+    border: 2px solid grey;
 }
 
 .download-cv:hover {
@@ -229,7 +230,8 @@ nav a:hover {
    General Sections
 ========================= */
 
-section {
+section,
+footer {
     padding: 80px 10%;
     border-top: 1px solid #21262d;
 }
@@ -276,9 +278,9 @@ section h2 {
 }
 
 
-/* =========================
+/*
    Skills
-========================= */
+             */
 
 .section-header-skill-page {
     color: white;
@@ -376,8 +378,40 @@ section h2 {
 
 
 /* =========================
-   Responsive Design
+   Contact / Footer Section
 ========================= */
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px 10%;
+    color: aqua;
+}
+
+.bottom-title {
+    color: #00ff9c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bottom-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-key {
+    color: #58a6ff;
+}
+
+.bottom-value {
+    color: #8b949e;
+}
+
+
+/* 
+   Responsive Design
+                      */
 
 @media (max-width: 768px) {
 
@@ -408,7 +442,8 @@ section h2 {
         margin-top: 20px;
     }
 
-    section {
+    section,
+    footer {
         padding: 60px 7%;
     }
 
@@ -441,4 +476,3 @@ section h2 {
         font-size: 30px;
     }
 }
-
